@@ -36,7 +36,7 @@ password = input("Enter your password: ")
 print(smtp_object.login(email, password))  # calling the login method on your smtp object
 
 from_address = email
-to_address = "kamil.klemsa@seznam.cz"
+to_address = email
 subject = input("Enter the subject: ")
 message = input("Enter the body: ")
 msg = "Subject: "+subject+'\n'+message
